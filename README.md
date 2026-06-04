@@ -20,7 +20,7 @@ sudo pacman -S base-devel pkgconf sdl2-compat sdl2_image
 
 ##### Debian / Ubuntu (Unsure)
 ``
-sudo apt install build-essential pkg-config libghc-sdl2-dev libghc-sdl2-image-dev
+sudo apt install build-essential libsdl2-dev libsdl2-image-dev 
 ``
 
 ##### Fedora
