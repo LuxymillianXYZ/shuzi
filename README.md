@@ -1,6 +1,6 @@
 # Shuzi 
 #### Suzi is a super minimal lightweight image viewer designed to quickly look at images through the terminal or with a minimal GUI
-##### Suzi is written in C with SDL2. It is around 400 lines of code.
+##### Suzi is written in C with SDL2.
 ##### Consult your local package manager for help. These are the core dependencies and I'll add some examples for certain distros.
 ##### There is also a written guide on compiling and building from source
 
