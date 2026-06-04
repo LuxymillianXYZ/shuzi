@@ -1,5 +1,5 @@
 /*
- * imgview - a small, fast image viewer for Linux
+ * shuzi - a small, fast image viewer for Linux
  *
  * Features:
  *   - Opens PNG, JPEG, GIF, WEBP, BMP, TIFF, etc. (anything SDL2_image supports)
@@ -8,9 +8,9 @@
  *   - Fullscreen toggle, checkerboard background for transparent images
  *
  * Usage:
- *   ./imgview photo.png                 # open one image (folder is scanned for next/prev)
- *   ./imgview a.jpg b.png c.gif         # open several
- *   ./imgview ~/Pictures/               # open every image in a folder
+ *   ./shuzi photo.png                 # open one image (folder is scanned for next/prev)
+ *   ./shuzi a.jpg b.png c.gif         # open several
+ *   ./shuzi ~/Pictures/               # open every image in a folder
  */
 
 #define _POSIX_C_SOURCE 200809L
@@ -207,7 +207,7 @@ static int load_image(Viewer *v, const ImageList *l, size_t idx) {
 
 static void set_idle_title(Viewer *v) {
     SDL_SetWindowTitle(v->win,
-        "imgview \xE2\x80\x94 drop an image here, or press O to open  (Q to quit)");
+        "shuzi \xE2\x80\x94 drop an image here, or press O to open  (Q to quit)");
 }
 
 static void render_dropzone(Viewer *v) {
@@ -410,7 +410,7 @@ int main(int argc, char **argv) {
     memset(&v, 0, sizeof(v));
     v.scale = 1.0;
 
-    v.win = SDL_CreateWindow("imgview",
+    v.win = SDL_CreateWindow("shuzi",
                              SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
                              1000, 700,
                              SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
